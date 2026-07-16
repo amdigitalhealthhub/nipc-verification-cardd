@@ -1,0 +1,175 @@
+/* --- Global Resets & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Sleek tint backdrop */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Header / Navigation --- */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    padding: 14px 24px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 28px; /* Precise height configuration for the NIPC crest alignment */
+    display: block;
+    object-fit: contain;
+}
+
+.sub-header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-size: 13px;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    background-color: #ffffff;
+}
+
+/* --- Main Layout --- */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+/* --- The Card Design --- */
+.status-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f3f5;
+}
+
+.company-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 22px;
+    letter-spacing: 0.1px;
+}
+
+/* --- Info Blocks --- */
+.info-group {
+    margin-bottom: 18px;
+}
+
+.info-group:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #adb5bd;
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: 0.2px;
+}
+
+.value {
+    display: block;
+    font-size: 13px;
+    color: #495057;
+}
+
+.text-muted {
+    color: #adb5bd;
+}
+
+/* --- Status Badge --- */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.badge-active {
+    background-color: #e6fcf5; /* Faded green tint */
+    color: #0ca678;            /* Solid dark green */
+}
+
+/* --- Footer Wrapper --- */
+.footer-wrapper {
+    background-color: #ffffff;
+    border-top: 1px solid #e9ecef;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 20px 24px;
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column h3 {
+    font-size: 11px;
+    color: #212529;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.footer-column a {
+    display: block;
+    font-size: 12px;
+    color: #868e96;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* --- The Bottom Copyright Bar --- */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    border-top: 1px solid #f1f3f5;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #adb5bd;
+}
+
+/* Mobile Devices Breakpoint */
+@media (max-width: 576px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+}
